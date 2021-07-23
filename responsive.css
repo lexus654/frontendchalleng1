@@ -4,11 +4,10 @@
     margin: 0;
     box-sizing: border-box;
   }
-  body {
-    /* background: tomato; */
-  }
+
   .main-header {
     height: 100vh;
+    width: auto;
   }
   nav {
     display: hidden;
@@ -45,6 +44,7 @@
   .container {
     display: flex;
     flex-direction: column;
+    background: none;
   }
   .image {
     background: url(/images/desktop/image-interactive.jpg) no-repeat center
@@ -57,9 +57,10 @@
     background: #fff;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 250px;
+
     margin-top: 10px;
     padding: 0;
+    height: 250px;
   }
   .content h2 {
     font-size: 1.5rem;
@@ -71,5 +72,195 @@
     text-align: center;
     font-size: 13px;
     line-height: 1.2;
+  }
+
+  /* second container */
+  .second .first-button {
+    display: none;
+  }
+  .second p {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .title-header {
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+  }
+
+  /* this is the image */
+  .flex-items {
+    display: flex;
+    grid-gap: 2%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    grid-gap: 20px;
+    flex-shrink: 2;
+    align-items: center;
+  }
+
+  .flex-image1 {
+    background: url(/images/desktop/image-deep-earth.jpg) no-repeat center
+      center/cover;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 2%;
+  }
+  .flex-image2 {
+    background: url(/images/desktop/image-night-arcade.jpg) no-repeat center
+      center/cover;
+    width: 300px;
+    height: 100px;
+  }
+  .flex-image3 {
+    background: url(/images/desktop/image-soccer-team.jpg) no-repeat top
+      center/cover;
+    width: 300px;
+    height: 100px;
+  }
+  .flex-image4 {
+    background: url(/images/desktop/image-grid.jpg) no-repeat center
+      center/cover;
+    width: 300px;
+    height: 100px;
+  }
+  .flex-image5 {
+    background: url(/images/desktop/image-from-above.jpg) no-repeat center
+      center/cover;
+    width: 300px;
+    height: 100px;
+  }
+  .flex-image6 {
+    background: url(/images/desktop/image-pocket-borealis.jpg) no-repeat center
+      center/cover;
+    width: 300px;
+    height: 100px;
+  }
+  .flex-image7 {
+    background: url(/images/desktop/image-curiosity.jpg) no-repeat center
+      center/cover;
+    width: 300px;
+    height: 100px;
+  }
+  .flex-image8 {
+    background: url(/images/desktop/image-fisheye.jpg) no-repeat center
+      center/cover;
+    width: 300px;
+    height: 100px;
+  }
+  .title {
+    display: inline;
+    color: #fff;
+    align-items: flex-end;
+    font-size: 20px;
+    /* background: rgba(0, 0, 0, 0.3); */
+    background: none;
+    height: 100px;
+    width: 150px;
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+  .second .second-btn {
+    display: inline-block;
+  }
+  .flex:hover {
+    opacity: 0.6;
+  }
+
+  .btn-dark:hover {
+    color: #fff;
+    background: #333;
+  }
+
+  /* this is the footer */
+  footer {
+    height: 450px;
+    background: rgb(0, 0, 0);
+    padding: 0;
+  }
+  .footer-bottom ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  footer h3 {
+    color: #fff;
+    font-family: "Alata", sans-serif;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer .footer-head {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px 10%;
+    margin: auto;
+  }
+
+  .footer .footer-head .image-holder img {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .footer .footer-head .image-holder {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* footer - bottom section */
+  .footer-bottom {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-bottom ul {
+    display: flex;
+  }
+  .footer-bottom ul li {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .footer-bottom ul li a {
+    color: #fff;
+    margin-right: 0px;
+  }
+
+  .footer-bottom ul li a {
+    color: #fff;
+    border-bottom: solid transparent 2px;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 2px;
+  }
+  .footer-bottom ul li a:hover {
+    border-bottom: solid white 2px;
+  }
+  .footer-bottom p {
+    color: #f4f4f4;
+  }
+
+  .second .second-btn {
+    display: inline-block;
+  }
+  footer .p1-hidden {
+    color: #f4f4f4;
+    text-align: center;
+    margin: auto;
+  }
+  .p2-hidden {
+    display: none;
+  }
+  .p1-hidden {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
   }
 }

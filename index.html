@@ -22,8 +22,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>Frontend Mentor | Loopstudios landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -74,7 +81,7 @@
       <section class="second">
         <div class="title-header">
           <p>OUR CREATIONS</p>
-          <a href="" class="btn-dark">SEE ALL</a>
+          <a href="" class="btn-dark first-button">SEE ALL</a>
         </div>
         <div class="container-2">
           <div class="flex-items">
@@ -117,6 +124,7 @@
             <div class="flex-image8 flex">
               <div class="title">MAKE IT FISHEYE</div>
             </div>
+            <a href="" class="btn-dark second-btn">SEE ALL</a>
           </div>
         </div>
       </section>
@@ -124,28 +132,32 @@
 
     <!-- this is the footer -->
     <footer class="footer">
-      <div class="footer-head">
-        <h3>loopstudios</h3>
-        <div class="image-holder">
-          <img src="/images/icon-facebook.svg" alt="" />
+      <h3 class="h3-hidden">loopstudios</h3>
+      <div class="footer-container">
+        <div class="footer-head">
+          <h3 class="p2-hidden">loopstudios</h3>
+          <div class="image-holder">
+            <img src="/images/icon-facebook.svg" alt="" />
 
-          <img src="/images/icon-twitter.svg" alt="" />
+            <img src="/images/icon-twitter.svg" alt="" />
 
-          <img src="/images/icon-pinterest.svg" alt="" />
+            <img src="/images/icon-pinterest.svg" alt="" />
 
-          <img src="/images/icon-instagram.svg" alt="" />
+            <img src="/images/icon-instagram.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Support</a></li>
+          </ul>
+          <p class="p2-hidden">&copy; Loopstudios. All rights reserved.</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Careers</a></li>
-          <li><a href="">Events</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">Support</a></li>
-        </ul>
-        <p>&copy; Loopstudios. All rights reserved.</p>
-      </div>
+      <p class="p1-hidden">&copy; Loopstudios. All rights reserved.</p>
     </footer>
     <div class="attribution">
       Challenge by
@@ -153,5 +165,10 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Ronald Laz</a>.
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
